@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: "Montserrat Regular";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
   font-family: "Roboto thin";
   font-weight: 100;
   font-display: swap;
@@ -286,6 +294,10 @@ img {
   color:rgba(4,4,5,0.33);
 }
 
+.projects {
+  margin-bottom: 80px;
+}
+
 .projects__title {
   margin: 0;
   padding-top: 55px;
@@ -345,6 +357,45 @@ img {
 .project-card__btn {
   margin-left: 43px;
   background-color: #fefefe;
+}
+
+.price {
+  text-align: center;
+}
+
+.price__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: "Montserrat Bold", Arial, sans-serif;
+  color: #040405;
+  font-size: 45px;
+  line-height: 41px;
+}
+
+.tariffs-table {
+  margin: 0 auto;
+  width: 634px;
+}
+
+.tariffs-table th {
+  font-family: "Montserrat Bold", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 41px;
+  text-transform: uppercase;
+  color: #040405;
+}
+
+.tariffs-table tr {
+  color: #040405;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+.tariffs-table tr:nth-child(2) {
+  font-family: "Montserrat Regular", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 7px;
+  color: rgba(4,4,5,0.39);
 }
 
 
