@@ -680,9 +680,8 @@ img {
   background-image: url("../img/sing-in-bcg.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: cover;
+  background-size: 100% 100%;
   text-align: center;
-  padding-bottom: 68px;
 }
 
 .sing-in__title {
@@ -694,4 +693,113 @@ img {
   font-weight: 700;
   line-height: 41px;
   color: #ffffff;
+}
+
+.sing-in__form input {
+  width: 414px;
+  box-sizing: border-box;
+  border: none;
+  height: 55px;
+  color: #040405;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 41px;
+  vertical-align: middle;
+  padding: 0 15px;
+}
+
+.sing-in__form input::placeholder {
+  color: #d8d8d8;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sing-in__form button {
+  margin-left: 414px;
+  min-width: 132px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #62497c;
+  padding: 24px 0;
+  color: #fefefe;
+  font-family: "Montserrat Bold", Arial, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 7px;
+  vertical-align: middle;
+}
+
+.sing-in__form button:hover,
+.sing-in__form button:focus {
+  background-color: #ffe26d;
+  color: #fefefe;
+  color: #323232;
+}
+
+.sing-in__form button[type="submit"] {
+  margin-left: 0;
+  background-color: #ffe26d;
+  color: #323232;
+  }
+
+.sing-in__form button[type="submit"]:hover,
+.sing-in__form button[type="submit"]:focus {
+  background-color: #62497c;
+  color: #fefefe;
+}
+
+.sing-in__form div {
+  font-size: 0;
+  margin-bottom: 22px;
+}
+
+.sing-in__form {
+  padding-bottom: 68px;
+}
+
+.blog {
+  text-align: center;
+}
+
+.blog__title {
+  margin: 0;
+  padding-top: 72px;
+  padding-bottom: 53px;
+  font-family: "Montserrat Bold", Arial, sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 41px;
+  color: #040405;
+}
+
+.blog__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 210px 210px 210px;
+  grid-gap: 34px;
+}
+
+.blog__list img {
+  display: block;
+  padding-bottom: 35px;
+}
+
+.blog__list h3 {
+  margin: 0;
+  padding-bottom: 24px;
+  font-family: "Montserrat Bold", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #040405;
+}
+
+.blog__list time {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.5;
 }
