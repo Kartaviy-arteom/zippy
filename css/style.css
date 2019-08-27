@@ -532,6 +532,7 @@ img {
 
 .team__list {
   margin: 0;
+  padding: 0;
   padding-bottom: 136px;
   display: grid;
   grid-template-columns: 173px 173px 173px;
@@ -798,8 +799,26 @@ input:focus::placeholder {
 }
 
 .blog__list time {
+  display: block;
+  padding-bottom: 25px;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
   opacity: 0.5;
+}
+
+.blog__list p {
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #040405;
+}
+
+.blog__list a {
+  display: block;
+  box-sizing: border-box;
+  width: 124px;
+  margin: 0 auto;
 }
