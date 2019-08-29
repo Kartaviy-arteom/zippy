@@ -19,18 +19,20 @@
   </div>
   <header class="header">
     <div class="header__container container">
-      <h1 class="header__title visually-hidden">Company Zippy</h1>
-      <img class="header__logo" src="img/logo.png" alt="company zippy">
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#">home</a></li>
-          <li class="nav__item"><a href="#projects">Projects</a></li>
-          <li class="nav__item"><a href="#">Pricing</a></li>
-          <li class="nav__item"><a href="#">team</a></li>
-          <li class="nav__item"><a href="#">blog</a></li>
-          <li class="nav__item"><a href="#">contact</a></li>
-        </ul>
-      </nav>
+      <div class="header__wrapper">
+        <h1 class="header__title visually-hidden">Company Zippy</h1>
+        <img class="header__logo" width="77" height="21" src="img/logo.png" alt="company zippy">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home">home</a></li>
+            <li class="nav__item"><a href="#projects">Projects</a></li>
+            <li class="nav__item"><a href="#pricing">Pricing</a></li>
+            <li class="nav__item"><a href="#team">team</a></li>
+            <li class="nav__item"><a href="#blog">blog</a></li>
+            <li class="nav__item"><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
       <input class="visually-hidden" type="radio" name="quote" id="quote-1" checked>
       <input class="visually-hidden" type="radio" name="quote" id="quote-2">
       <input class="visually-hidden" type="radio" name="quote" id="quote-3">
@@ -66,7 +68,7 @@
     </div>
   </header>
   <main>
-    <section class="welcome container">
+    <section id="home" class="welcome container">
       <h2 class="welcome__title">Welcome to Zippy</h1>
       <p class="welcome__description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p>
       <ul class="welcome__features-list features-list">
@@ -95,7 +97,7 @@
             <img class="project-card__preview" width="351" height="485" src="img/project-preview-1@1x.jpg" alt="Preview project catalog" srcset="img/project-preview-1@2x.jpg 2x">
             <h3 class="project-card__title">project name</h3>
             <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis placerat pharetra ut vitae felis. </p>
-            <a href="" class="project-card__btn btn">learn more</a>
+            <a href="" class="project-card__btn btn">launch case study</a>
           </div>
         </li>
         <li class="projects__item">
@@ -103,7 +105,7 @@
             <img class="project-card__preview" width="351" height="485" src="img/project-preview-2@1x.jpg" alt="Preview project application" srcset="img/project-preview-2@2x.jpg 2x">
             <h3 class="project-card__title">project name</h3>
             <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis placerat pharetra ut vitae felis. </p>
-            <a href="" class="project-card__btn btn">learn more</a>
+            <a href="" class="project-card__btn btn">launch case study</a>
           </div>
         </li>
         <li class="projects__item">
@@ -111,7 +113,7 @@
             <img class="project-card__preview" width="351" height="485" src="img/project-preview-3@1x.jpg" alt="Preview project indicators" srcset="img/project-preview-3@2x.jpg 2x">
             <h3 class="project-card__title">project name</h3>
             <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis placerat pharetra ut vitae felis. </p>
-            <a href="" class="project-card__btn btn">learn more</a>
+            <a href="" class="project-card__btn btn">launch case study</a>
           </div>
         </li>
         <li class="projects__item">
@@ -119,14 +121,17 @@
             <img class="project-card__preview" width="351" height="485" src="img/project-preview-4@1x.jpg" alt="web page preview" srcset="img/project-preview-4@2x.jpg 2x">
             <h3 class="project-card__title">project name</h3>
             <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis placerat pharetra ut vitae felis. </p>
-            <a href="" class="project-card__btn btn">learn more</a>
+            <a href="" class="project-card__btn btn">launch case study</a>
           </div>
         </li>
       </ul>
     </section>
-    <section class="price container">
+    <section id="pricing" class="price container">
       <h2 class="price__title">Pricing table</h2>
       <table class="price__table tariffs-table" summary="tariffs plans">
+        <col class="tariffs-table__col tariffs-table__col--first">
+        <col class="tariffs-table__col tariffs-table__col--second">
+        <col class="tariffs-table__col tariffs-table__col--third">
         <tr>
           <th>standart plan</th>
           <th>business plan</th>
@@ -194,7 +199,7 @@
         </ul>
       </div>
     </section>
-    <section class="team container">
+    <section id="team" class="team container">
       <h2 class="team__title">Zippy Team</h2>
       <ul class="team__list">
         <li class="team__worker">
@@ -319,7 +324,7 @@
         </li>
         <li class="team__worker">
           <img src="img/worker-5.jpg" width="173" height="173" alt="Aliza">
-          <span class="team__worker-name">Aliza SEO MONSTER</span>
+          <span class="team__worker-name">Aliza</span>
           <span class="team__worker-position">SEO MONSTER</span>
           <div class="team__social social">
             <ul class="social__list">
@@ -409,7 +414,7 @@
         </div>
       </div>
     </section>
-    <section class="blog container">
+    <section id="blog" class="blog container">
       <h2 class="blog__title">Blog</h2>
       <ul class="blog__list">
         <li>
@@ -441,7 +446,7 @@
         </li>
       </ul>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <img src="img/map.png" width="693" height="654" alt="we are located at ...">
       <div class="contact__wrapper">
         <h2 class="contact__title">Contact</h2>
