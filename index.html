@@ -385,18 +385,20 @@
       </ul>
     </section>
     <section class="life">
-      <div class="life_wrapper container">
+      <div class="life__wrapper container">
         <h2 class="life__title">Life in Zippy</h2>
         <img src="img/life-1.jpg" width="694" height="429" alt="interesting life in our company">
-        <button class="life__btn life__btn--no-photo"></button>
-        <ul class="life__gallery">
-          <li><img src="img/life-preview-1.jpg" width="111" height="69" alt="our company life photo"></li>
-          <li><img src="img/life-preview-2.jpg" width="111" height="69" alt="our company life photo"></li>
-          <li><img src="img/life-preview-3.jpg" width="111" height="69" alt="our company life photo"></li>
-          <li><img src="img/life-preview-4.jpg" width="111" height="69" alt="our company life photo"></li>
-          <li><img src="img/life-preview-5.jpg" width="111" height="69" alt="our company life photo"></li>
-          <li><img src="img/life-preview-1.jpg" width="111" height="69" alt="our company life photo"></li>
-        </ul>
+        <button class="life__btn life__btn--left life__btn--no-photo"></button>
+        <div class="life__wrapper life__wrapper--gallery">
+          <ul class="life__gallery">
+            <li><img src="img/life-preview-1.jpg" width="111" height="69" alt="our company life photo"></li>
+            <li><img src="img/life-preview-2.jpg" width="111" height="69" alt="our company life photo"></li>
+            <li><img src="img/life-preview-3.jpg" width="111" height="69" alt="our company life photo"></li>
+            <li><img src="img/life-preview-4.jpg" width="111" height="69" alt="our company life photo"></li>
+            <li><img src="img/life-preview-5.jpg" width="111" height="69" alt="our company life photo"></li>
+            <li><img src="img/life-preview-1.jpg" width="111" height="69" alt="our company life photo"></li>
+          </ul>
+        </div>
         <button class="life__btn life__btn--right"></button>
       </div>
     </section>
@@ -465,56 +467,53 @@
         </form>
       </div>
     </section>
-    <footer class="footer container">
-      <h2 class="footer__title visually-hidden">additional contact information</h2>
-      <div class="footer__address">
-        <h3 class="footer__subtitle">Office Address</h3>
-        <p>Lorem Ipsum dolor, 234 1200 Consecture Adipsching</p>
-      </div>
-      <div class="footer__social">
-        <h3 class="footer__subtitle">Follow us</h3>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <svg width="24" height="16">
-              <use xlink:href="#behance-icon"></use>
-            </svg>
-          </li>
-          <li class="footer__social-item">
-            <svg width="16" height="12">
-              <use xlink:href="#twitter-icon"></use>
-            </svg>
-          </li>
-          <li class="footer__social-item footer__social-item--linkediin-icon">
-            <svg width="17" height="16">
-              <use xlink:href="#linkediin-icon"></use>
-            </svg>
-          </li>
-          <li class="footer__social-item">
-            <svg width="9" height="16">
-              <use xlink:href="#fb-icon"></use>
-            </svg>
-          </li>
-          <li class="footer__social-item">
-            <svg width="19" height="16">
-              <use xlink:href="#google-icon"></use>
-            </svg>
-          </li>
-          <li class="footer__social-item">
-            <svg width="10" height="16">
-              <use xlink:href="#tumblr-icon"></use>
-            </svg>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__contact-us">
-        <h3 class="footer__subtitle">Contact us</h3>
-        <p> +&#160;123&#160;456&#160;789 zippy@skype enquiry@zippy.com </p>
-      </div>
-    </footer>
   </main>
-  <footer>
-
+  <footer class="footer container">
+    <h2 class="footer__title visually-hidden">additional contact information</h2>
+    <div class="footer__address">
+      <h3 class="footer__subtitle">Office Address</h3>
+      <p>Lorem Ipsum dolor, 234 1200 Consecture Adipsching</p>
+    </div>
+    <div class="footer__social">
+      <h3 class="footer__subtitle">Follow us</h3>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <svg width="24" height="16">
+            <use xlink:href="#behance-icon"></use>
+          </svg>
+        </li>
+        <li class="footer__social-item">
+          <svg width="16" height="12">
+            <use xlink:href="#twitter-icon"></use>
+          </svg>
+        </li>
+        <li class="footer__social-item footer__social-item--linkediin-icon">
+          <svg width="17" height="16">
+            <use xlink:href="#linkediin-icon"></use>
+          </svg>
+        </li>
+        <li class="footer__social-item">
+          <svg width="9" height="16">
+            <use xlink:href="#fb-icon"></use>
+          </svg>
+        </li>
+        <li class="footer__social-item">
+          <svg width="19" height="16">
+            <use xlink:href="#google-icon"></use>
+          </svg>
+        </li>
+        <li class="footer__social-item">
+          <svg width="10" height="16">
+            <use xlink:href="#tumblr-icon"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__contact-us">
+      <h3 class="footer__subtitle">Contact us</h3>
+      <p> +&#160;123&#160;456&#160;789 zippy@skype enquiry@zippy.com </p>
+    </div>
   </footer>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
