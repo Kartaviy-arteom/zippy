@@ -69,7 +69,7 @@
   </header>
   <main>
     <section id="home" class="welcome container">
-      <h2 class="welcome__title">Welcome to Zippy</h1>
+      <h2 class="welcome__title">Welcome to Zippy</h2>
       <p class="welcome__description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p>
       <ul class="welcome__features-list features-list">
         <li class="features-list__item features-list__item--lorem">
@@ -128,7 +128,7 @@
     </section>
     <section id="pricing" class="price container">
       <h2 class="price__title">Pricing table</h2>
-      <table class="price__table tariffs-table" summary="tariffs plans">
+      <table class="price__table tariffs-table">
         <col class="tariffs-table__col tariffs-table__col--first">
         <col class="tariffs-table__col tariffs-table__col--second">
         <col class="tariffs-table__col tariffs-table__col--third">
@@ -168,7 +168,7 @@
               <td><a class="tarriffs-table__btn btn">buy</a></td>
               <td><a class="tarriffs-table__btn btn">buy</a></td>
             </tr>
-          <tfoot>
+          </tfoot>
       </table>
     </section>
     <section class="video">
@@ -388,7 +388,7 @@
       <div class="life_wrapper container">
         <h2 class="life__title">Life in Zippy</h2>
         <img src="img/life-1.jpg" width="694" height="429" alt="interesting life in our company">
-        <button class="life__btn life__btn--no-photo" area-label="preview photo"></button>
+        <button class="life__btn life__btn--no-photo"></button>
         <ul class="life__gallery">
           <li><img src="img/life-preview-1.jpg" width="111" height="69" alt="our company life photo"></li>
           <li><img src="img/life-preview-2.jpg" width="111" height="69" alt="our company life photo"></li>
@@ -397,7 +397,7 @@
           <li><img src="img/life-preview-5.jpg" width="111" height="69" alt="our company life photo"></li>
           <li><img src="img/life-preview-1.jpg" width="111" height="69" alt="our company life photo"></li>
         </ul>
-        <button class="life__btn life__btn--right" area-label="next photo"></button>
+        <button class="life__btn life__btn--right"></button>
       </div>
     </section>
     <section class="sing-in">
@@ -421,7 +421,7 @@
           <article class="blog__article article">
             <img src="img/blog-image-1.jpg" width="208" height="112" alt="LOREM IPSUM dolor sit amet">
             <h3>LOREM IPSUM dolor sit amet</h3>
-            <time pubdate>15 Jan, 2015</time>
+            <time datetime="2015-01-15">15 Jan, 2015</time>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis placerat pharetra ut vitae felis. </p>
           </article>
           <a class="btn" href= "#">read more</a>
@@ -430,7 +430,7 @@
           <article class="blog__article article">
             <img src="img/blog-image-2.jpg" width="208" height="112" alt="LOREM IPSUM dolor sit amet">
             <h3>LOREM IPSUM dolor sit amet</h3>
-            <time pubdate>15 Jan, 2015</time>
+            <time datetime="2015-01-15">15 Jan, 2015</time>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis placerat pharetra ut vitae felis. </p>
           </article>
           <a class="btn" href= "#">read more</a>
@@ -439,7 +439,7 @@
           <article class="blog__article article">
             <img src="img/blog-image-3.jpg" width="208" height="112" alt="LOREM IPSUM dolor sit amet">
             <h3>LOREM IPSUM dolor sit amet</h3>
-            <time pubdate>15 Jan, 2015</time>
+            <time datetime="2015-01-15">15 Jan, 2015</time>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis placerat pharetra ut vitae felis. </p>
           </article>
           <a class="btn" href= "#">read more</a>
@@ -453,13 +453,13 @@
         <form action="">
           <fieldset>
             <label for="name">name</label>
-            <input id="name" name="name" type="text">
+            <input id="name" name="name" type="text" minlength="3" maxlength="30" required>
             <label for="email">email address</label>
-            <input id="email" name="email" type="email">
+            <input id="email" name="email" type="email" required>
             <label for="subject">Subject</label>
-            <input id="subject" name="subject" type="text">
+            <input id="subject" name="subject" type="text" required>
             <label for="message">Message</label>
-            <textarea id="message" name="message" type="text"></textarea>
+            <textarea id="message" name="message" required></textarea>
           </fieldset>
           <button class="contact__btn btn" type="submit">send</button>
         </form>

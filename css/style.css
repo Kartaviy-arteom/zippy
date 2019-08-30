@@ -121,6 +121,10 @@ img {
   color: #ffe26d;
 }
 
+.nav__item a:active {
+  opacity: 0.7;
+}
+
 .slider-card {
   display: none;
   min-height: 250px;
@@ -171,6 +175,10 @@ img {
 .btn:focus {
   background-color: #62497c;
   color: #fff;
+}
+
+.btn:active {
+  opacity: 0.7;
 }
 
 #quote-1:checked ~ .header__slider-list .slider-card:nth-child(1),
@@ -498,6 +506,16 @@ img {
   background-image: url("../img/play-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.7;
+}
+
+.video__list li:hover::before,
+.video__list li:focus::before {
+  opacity: 1;
+}
+
+.video__list li:active::before {
+  opacity:0.3;
 }
 
 .video__list img {
@@ -634,8 +652,13 @@ img {
   fill: #faefe9;
 }
 
-.social__item svg:hover {
+.social__item svg:hover,
+.social__item svg:focus {
   opacity: 0.8;
+}
+
+.social__item svg:active {
+   opacity: 0.3;
 }
 
 .social__list {
@@ -697,6 +720,15 @@ img {
   background-image: url("../img/left-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.life__btn:hover,
+.life__btn:focus {
+  opacity: 0.8;
+}
+
+.life__btn:active {
+  opacity: 0.3;
 }
 
 .life__btn--no-photo {
@@ -794,12 +826,16 @@ input:focus::placeholder {
   margin-left: 0;
   background-color: #ffe26d;
   color: #323232;
-  }
+}
 
 .sing-in__form button[type="submit"]:hover,
 .sing-in__form button[type="submit"]:focus {
   background-color: #62497c;
   color: #fefefe;
+}
+
+.sing-in__form button:active {
+  opacity: 0.3;
 }
 
 .sing-in__form div {
@@ -936,6 +972,7 @@ input:focus::placeholder {
   box-sizing: border-box;
   margin-bottom: 21px;
   margin-left: 43px;
+  padding: 10px;
   height: 44px;
   width: 311px;
   border: none;
@@ -1043,7 +1080,16 @@ input:focus::placeholder {
   fill: #000000;
 }
 
-.footer__social-item--linkediin-icon {
+.footer__social-item:hover,
+.footer__social-item:focus {
   fill: #62497c;
+}
+
+.footer__social-item:active {
+  opacity: 0.8;
+}
+
+.footer__social-item--linkediin-icon {
+  fill: #000000;
   margin-bottom: 8px;
 }
