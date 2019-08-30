@@ -741,6 +741,7 @@ img {
 
 .life__gallery {
   position: relative;
+  font-size: 0;
   left: 0;
   margin: 0;
   padding: 0;
