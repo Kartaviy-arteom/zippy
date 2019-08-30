@@ -1,7 +1,7 @@
 'use strict';
 
 (function() {
-	var GAP = 119.5;
+	var GAP = 124;
 	var gallery = document.querySelector('.life__gallery');
 	var rightBtn = document.querySelector('.life__btn--right');
 	var leftBtn = document.querySelector('.life__btn--left');
